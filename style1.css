@@ -1,7 +1,7 @@
 .container{
   display: grid;
   grid-template-columns: 110px;
-  grid-template-rows: 70px 80em 25em 70px;
+  grid-template-rows: 70px 100em 25em 70px;
   grid-template-areas: "hd hd hd hd hd"
     "main main main main main"
     "sd sd sd sd sd"
@@ -105,11 +105,24 @@
   justify-content: center;
 }
 
-@media (min-device-width: 320px) and (max-device-width: 568px){
+@media (min-width: 320px) and (max-width: 900px){
   .container{
     display: grid;
     grid-template-columns: 110px;
     grid-template-rows: 70px 120em 25em 70px;
+    grid-template-areas: "hd hd hd hd hd"
+      "main main main main main"
+      "sd sd sd sd sd"
+      "ft ft ft ft ft";
+    grid-gap: 1px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 812px){
+  .container{
+    display: grid;
+    grid-template-columns: 110px;
+    grid-template-rows: 70px 110em 25em 70px;
     grid-template-areas: "hd hd hd hd hd"
       "main main main main main"
       "sd sd sd sd sd"
@@ -141,5 +154,91 @@ align-items: flex-end;
 .new-top:hover,.border:hover{
   background-color: #000000;
   cursor: pointer;
+
+}
+
+/****  Large Screen :- Large Device ****/
+
+@media (min-width: 900px){
+  .container{
+    display: grid;
+    grid-template-columns: 50px 30em 50px 50px;
+    grid-template-rows: 70px 50em 15em 70px;
+    grid-template-areas: "hd hd hd hd hd"
+      "main main main main main"
+      "sd sd sd sd sd"
+      "ft ft ft ft ft";
+    grid-gap: 1px;
+  }
+
+  .new-top,.border{
+    border: 2px solid #f50101;
+    padding: 15px;
+    border-radius: 4px 4px 4px 4px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+}
+
+/*** Ipad Responside Page ***/
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .container{
+    display: grid;
+    grid-template-columns: 110px;
+    grid-template-rows: 70px 80em 20em 70px;
+    grid-template-areas: "hd hd hd hd hd"
+      "main main main main main"
+      "sd sd sd sd sd"
+      "ft ft ft ft ft";
+    grid-gap: 1px;
+  }
+
+  .colores{
+    color: #fff;
+    margin-left: 2%;
+    line-height: 1.5cm;
+}
+
+/*** Button Border ***/
+.new-top,.border{
+  border: 2px solid #f50101;
+  padding: 15px;
+  border-radius: 4px 4px 4px 4px;
+  text-decoration: none;
+  color: #fff;
+}
+
+}
+
+/*** Ipad Pro Response Page ***/
+
+
+@media (min-width: 1024px) and (max-width: 1366px){
+  .container{
+    display: grid;
+    grid-template-columns: 110px;
+    grid-template-rows: 70px 65em 20em 70px;
+    grid-template-areas: "hd hd hd hd hd"
+      "main main main main main"
+      "sd sd sd sd sd"
+      "ft ft ft ft ft";
+    grid-gap: 1px;
+  }
+
+  .colores{
+    color: #fff;
+    margin-left: 2%;
+    line-height: 1.5cm;
+}
+/**** Button Border ***/
+.new-top,.border{
+  border: 2px solid #f50101;
+  padding: 15px;
+  border-radius: 4px 4px 4px 4px;
+  text-decoration: none;
+  color: #fff;
+}
 
 }
