@@ -1,0 +1,145 @@
+.container{
+  display: grid;
+  grid-template-columns: 110px;
+  grid-template-rows: 70px 80em 25em 70px;
+  grid-template-areas: "hd hd hd hd hd"
+    "main main main main main"
+    "sd sd sd sd sd"
+    "ft ft ft ft ft";
+  grid-gap: 1px;
+  font-size: 5vmin;
+  font-weight: 900;
+
+}
+
+.line{
+  border: 2px solid red;
+
+}
+/*** Top *****/
+.top{
+  grid-area: hd;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://i.pinimg.com/originals/ee/36/bb/ee36bba761e74b7f65fc618f8f98b719.jpg");
+  color: #fff;
+
+}
+
+.top:hover{
+  color: #ffed00;
+}
+
+.main{
+  grid-area: main;
+  background-color: #797575;
+}
+
+.side{
+  grid-area: sd;
+
+}
+
+.footer{
+  grid-area: ft;
+}
+
+/*******************/
+
+
+.new-topic{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 2%;
+  font-family: 'EB Garamond', serif;
+  color: #060606;
+
+}
+
+.publish-bottom{
+  margin-left: 2%;
+  color: #fffefe;
+
+}
+
+
+.colores{
+  color: #fff;
+  margin-left: 2%;
+  line-height: 1cm;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.colours{
+  color: #fff;
+  margin-left: 1%;
+}
+
+.no-design{
+  text-decoration: none;
+  color: #200eee;
+}
+
+.about-me{
+  margin-left: 35%;
+}
+
+.bio{
+  border: 1px solid red;
+  border-radius: 100%;
+  width: 60px;
+
+}
+
+
+.copy-right{
+  text-decoration: none;
+  color: #060000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-device-width: 320px) and (max-device-width: 568px){
+  .container{
+    display: grid;
+    grid-template-columns: 110px;
+    grid-template-rows: 70px 120em 25em 70px;
+    grid-template-areas: "hd hd hd hd hd"
+      "main main main main main"
+      "sd sd sd sd sd"
+      "ft ft ft ft ft";
+    grid-gap: 1px;
+  }
+}
+
+.posts{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: flex-end;
+
+}
+
+.New-topics{
+  margin-left: 30px;
+}
+
+.new-top,.border{
+  border: 2px solid #f50101;
+  padding: 15px;
+  border-radius: 4px 4px 4px 4px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.new-top:hover,.border:hover{
+  background-color: #000000;
+  cursor: pointer;
+
+}
